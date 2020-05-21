@@ -5,7 +5,7 @@ import { useAuth } from "../Context/auth";
 function Admin(props) {
   const { setAuthTokens } = useAuth();
   const logOut = () => {
-    setAuthTokens(null)
+    setAuthTokens(null, true)
   }
   return <div>
     <div>Admin Page</div>

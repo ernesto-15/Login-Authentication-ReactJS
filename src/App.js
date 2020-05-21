@@ -10,11 +10,22 @@ import Signup from './Pages/SignUp';
 function App(props) {
   const existingTokens = JSON.parse(localStorage.getItem('tokens'));
   const [authTokens, setAuthTokens] = useState(existingTokens);
-  // const [isValidated, setIsValidated] = useState(false);
-  const setTokens = (data) => {
-    localStorage.setItem('tokens', JSON.stringify(data));
-    setAuthTokens(data);
+  const [isValidated, setIsValidated] = useState(false);
+  const setTokens = (data, logout) => {
+    if(logout) {
+      localStorage.removeItem('tokens');
+      setAuthTokens(null);  
+    }
+    else {
+      localStorage.setItem('tokens', JSON.stringify(data));
+      setAuthTokens(data);
+    }
   };
+  
+  const validate = (validated) => {
+    setIsValidated(validated)
+  }
+
   // useEffect(() => {
   //   console.log('object');
   //   const fetchData = async () => {
@@ -31,7 +42,7 @@ function App(props) {
   // }, []);
 
   return (
-    <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
+    <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens, validate, isValidated }}>
       <Router>
         <div>
           <ul>

@@ -31,7 +31,7 @@ function Login(props) {
       );
       const { ok, data } = await resp.json();
       if (ok) {
-        setAuthTokens(data.token);
+        setAuthTokens(data.token, false);
         setLoggedIn(true);
       } else {
         setIsError(true);
