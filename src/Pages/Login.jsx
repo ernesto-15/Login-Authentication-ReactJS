@@ -7,11 +7,10 @@ import { useAuth } from '../Context/auth';
 
 function Login(props) {
   // const referer = props.state.location.referer || '/'
-  const [isLoggedIn, setLoggedIn] = useState(false);
   const [isError, setIsError] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { setAuthTokens } = useAuth();
+  const { setAuthTokens, isValidated } = useAuth();
 
   const postLogin = async () => {
     try {
@@ -31,8 +30,8 @@ function Login(props) {
       );
       const { ok, data } = await resp.json();
       if (ok) {
+        console.log('object');
         setAuthTokens(data.token, false);
-        setLoggedIn(true);
       } else {
         setIsError(true);
       }
@@ -41,7 +40,7 @@ function Login(props) {
     }
   };
 
-  if (isLoggedIn) {
+  if (isValidated) {
     return <Redirect to='/admin' />;
   }
 
