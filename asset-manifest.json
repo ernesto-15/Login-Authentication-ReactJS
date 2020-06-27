@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Login-Authentication-ReactJS/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/Login-Authentication-ReactJS/static/js/main.f3c615c6.chunk.js",
+    "main.js.map": "/Login-Authentication-ReactJS/static/js/main.f3c615c6.chunk.js.map",
+    "runtime-main.js": "/Login-Authentication-ReactJS/static/js/runtime-main.c8a23095.js",
+    "runtime-main.js.map": "/Login-Authentication-ReactJS/static/js/runtime-main.c8a23095.js.map",
+    "static/js/2.13cb685c.chunk.js": "/Login-Authentication-ReactJS/static/js/2.13cb685c.chunk.js",
+    "static/js/2.13cb685c.chunk.js.map": "/Login-Authentication-ReactJS/static/js/2.13cb685c.chunk.js.map",
+    "index.html": "/Login-Authentication-ReactJS/index.html",
+    "precache-manifest.8b63a225761a48f2474bb781bc6a3130.js": "/Login-Authentication-ReactJS/precache-manifest.8b63a225761a48f2474bb781bc6a3130.js",
+    "service-worker.js": "/Login-Authentication-ReactJS/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/Login-Authentication-ReactJS/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.13cb685c.chunk.js.LICENSE.txt": "/Login-Authentication-ReactJS/static/js/2.13cb685c.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/Login-Authentication-ReactJS/static/media/logo.0e4fdce8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a23095.js",
+    "static/js/2.13cb685c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.f3c615c6.chunk.js"
+  ]
+}
